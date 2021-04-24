@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import babyNamesData from './babyNamesData.json'
 
@@ -13,7 +12,7 @@ function App() {
            babyName1.name.localeCompare(babyName2.name)
          ))
          .map((babyName, index) => (
-           babyName.sex == "f" ? 
+           babyName.sex === "f" ? 
            <span key = {index} className = "female">{babyName.name} </span>
            :<span key = {index} className = "male">{babyName.name} </span>
           ))}
