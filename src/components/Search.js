@@ -1,8 +1,11 @@
 import React from "react";
 
 
-const Search = ({searchInput, handleSearch}) => {
+const Search = ({searchInput, setSearchInput}) => {
   
+  function handleSearch(event) {
+    setSearchInput(event.target.value);
+  }  
 
   return (
     <div>
